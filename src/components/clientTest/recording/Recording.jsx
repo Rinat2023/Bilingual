@@ -1,6 +1,6 @@
 /* eslint-disable react/self-closing-comp */
 import React, { useEffect, useState } from 'react'
-import { ReactMic } from 'react-mic'
+// import { ReactMic } from 'react-mic'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { styled } from '@mui/material'
@@ -139,13 +139,13 @@ function Recording() {
             </ActiveContainer>
          </MainRecordingContainer>
 
-         <ReactMik
+         {/* <ReactMik
             record={record}
             className="sound-wave"
             onStop={onStop}
             strokeColor="#d340f0"
             backgroundColor="#ffffff"
-         />
+         /> */}
       </div>
    )
 }
@@ -267,9 +267,9 @@ const ActiveContainer = styled('div')({
    },
 })
 
-const ReactMik = styled(ReactMic)({
-   display: 'none',
-})
+// const ReactMik = styled(ReactMic)({
+//    display: 'none',
+// })
 const ButtonContainer = styled('div')({
    display: 'flex',
    '& :nth-child(2)': {
