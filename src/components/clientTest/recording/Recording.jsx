@@ -24,10 +24,12 @@ function Recording() {
    const [isButtonStop, setIsButtonStop] = useState(false)
    const dispatch = useDispatch()
    const navigate = useNavigate()
+   console.log(record)
 
    const onStop = (blobFile) => {
       setFile(blobFile.blob)
    }
+   console.log(onStop)
    const PlayHandler = () => {
       setIsButtonStop((prev) => !prev)
       if (isButtonStop) {
